@@ -22,6 +22,7 @@
 > 
 > Tianjian Jiang, Xu Chen, Jie Song, Otmar Hilliges
 
+- SplattingAvatar
 - Anim-NeRF
 - InstantAvatar
 - videoavatars
