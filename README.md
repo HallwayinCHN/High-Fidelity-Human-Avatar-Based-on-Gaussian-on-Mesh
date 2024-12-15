@@ -2,7 +2,7 @@
 > WANG Haowei, XU Xinmu, YANG Can
 
 ## Related Paper or Project
-> [SplattingAvatar: Realistic Real-Time Human Avatars with Mesh-Embedded Gaussian Splatting]([https://arxiv.org/abs/2106.13629](https://arxiv.org/abs/2403.05087))
+> [SplattingAvatar: Realistic Real-Time Human Avatars with Mesh-Embedded Gaussian Splatting](https://arxiv.org/abs/2403.05087)
 >   
 > Zhijing Shao, Zhaolong Wang, Zhuang Li, Duotun Wang, Xiangru Lin, Yu Zhang, Mingming Fan, Zeyu Wang
 
