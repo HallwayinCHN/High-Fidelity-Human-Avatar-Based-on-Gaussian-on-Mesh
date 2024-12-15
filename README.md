@@ -3,7 +3,8 @@
 ### [Github](https://github.com/JanaldoChen/Anim-NeRF) | [Paper](https://arxiv.org/abs/2106.13629)
 
 ## Related Paper
-> [Animatable Neural Radiance Fields from Monocular RGB Videos](https://arxiv.org/abs/2106.13629)    
+> [Animatable Neural Radiance Fields from Monocular RGB Videos](https://arxiv.org/abs/2106.13629)
+>   
 > Jianchuan Chen, Ying Zhang, Di Kang, Xuefei Zhe, Linchao Bao, Xu Jia, Huchuan Lu
 
 > [Video based reconstruction of 3D people models](https://arxiv.org/abs/1803.04758)
@@ -11,9 +12,11 @@
 > Thiemo Alldieck, Marcus Magnor, Weipeng Xu, Christian Theobalt, Gerard Pons-Moll
 
 > [Robust High-Resolution Video Matting with Temporal Guidance](https://arxiv.org/abs/2108.11515)
-> Shanchuan Lin, Linjie Yang, Imran Saleemi, Soumyadip Sengupta
 > 
+> Shanchuan Lin, Linjie Yang, Imran Saleemi, Soumyadip Sengupta
+
 > [InstantAvatar: Learning Avatars from Monocular Video in 60 Seconds](https://arxiv.org/abs/2212.10550)
+> 
 > Tianjian Jiang, Xu Chen, Jie Song, Otmar Hilliges
 
 ## Demos
