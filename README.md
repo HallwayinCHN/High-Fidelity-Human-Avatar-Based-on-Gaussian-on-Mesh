@@ -18,6 +18,11 @@
 > 
 > Tianjian Jiang, Xu Chen, Jie Song, Otmar Hilliges
 
+- Anim-NeRF
+- InstantAvatar
+- videoavatars
+- RobustVideoMatting
+
 ## Requirements
 - Python3.7 or later
 - [PyTorch](https://pytorch.org/) 1.6 or later
