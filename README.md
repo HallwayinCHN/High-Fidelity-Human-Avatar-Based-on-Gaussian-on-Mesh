@@ -7,7 +7,7 @@
 > Jianchuan Chen, Ying Zhang, Di Kang, Xuefei Zhe, Linchao Bao, Xu Jia, Huchuan Lu
 
 > [Video based reconstruction of 3D people models](https://arxiv.org/abs/1803.04758)
-> Jianchuan Chen, Ying Zhang, Di Kang, Xuefei Zhe, Linchao Bao, Xu Jia, Huchuan Lu
+> 
 > Thiemo Alldieck, Marcus Magnor, Weipeng Xu, Christian Theobalt, Gerard Pons-Moll
 
 > [Robust High-Resolution Video Matting with Temporal Guidance](https://arxiv.org/abs/2108.11515)
