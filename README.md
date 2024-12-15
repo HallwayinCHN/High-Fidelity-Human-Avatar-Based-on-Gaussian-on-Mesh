@@ -105,6 +105,7 @@ smplx
   ```sh
   python train.py --cfg_file configs/iper/iper_yc_refine.yaml train.ckpt_path checkpoints/iper/last.ckpt
   ```
+Here, you should try the first command and modify the yaml file as you wish; Then run the second one and modify the refine yaml file as you wish (train and test frames are both use this)
 
 ## Acknowledgements
 We would like to express my deepest gratitude to my supervisor, Dr. Xiao Dong, for her invaluable advice and guidance throughout this project. Her insights and encouragement were instrumental in bringing this work to fruition. We are also profoundly grateful to Mr. Sen Peng for his technical and theoretical clarifications, which greatly contributed to the success of this project. His expertise and willingness to assist were truly invaluable. Furthermore, we would like to extend our heartfelt thanks to our school BNU-HKBU UIC for providing the necessary resources and a conducive environment for this research. The support and facilities offered by the university played a critical role in the completion of this work. Lastly, great thanks go to our family for their unwavering support and understanding. Their encouragement and patience were essential in enabling us to focus on and complete this project. 
