@@ -1,4 +1,5 @@
 # High-Fidelity-Human-Avatar-Based-on-Gaussian-on-Mesh
+> WANG Haowei, XU Xinmu, YANG Can
 
 ## Related Paper or Project
 > [Animatable Neural Radiance Fields from Monocular RGB Videos](https://arxiv.org/abs/2106.13629)
