@@ -1,5 +1,6 @@
 # High-Fidelity-Human-Avatar-Based-on-Gaussian-on-Mesh
 > WANG Haowei, XU Xinmu, YANG Can
+> 
 > Supervisor: DONG Xiao, Beijing Normal University - Hong Kong Baptist University United International College
 
 ## Related Paper or Project
