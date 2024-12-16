@@ -1,0 +1,57 @@
+
+./run_step1.sh data/male-william data/male-william
+
+./run_step1.sh data/male-william/cam_p data/male-william/cam_p
+
+./run_step1.sh data/male-3-casual data/male-3-casual
+
+
+python generate_json.py -l=../json_data -v=/root/videoavatars/data/male-william/male_2_1.mp4
+
+
+python prepare_data/create_camera.py data/male-william/camera.pkl 1080 1080 -k -0.23165970761494162 2.590942194849136 -0.018256651224321855 -0.013144581869879851 -11.112296983455451 -c 960.4679049981308 496.0346962553651 -f 1549.3649050351842 1564.4461218987262
+
+python generate_json.py -l=videoavatars/videospre/json_data_whw -v=videoavatars/data/male-wiiliam/male_2_1.mp4
+
+python prepare_data/create_camera.py data/male-william/camera.pkl 1080 1080 -f 1413.46370011 1426.27299891 -c 459.45731242509254 494.05210296112347 -k -0.18648283569828575 2.321578607194671 -0.015417376978634769 -0.011584853532878806 -9.96624425448801 -rt -0.05585489648442128 -0.09894659381417795 3.1041586388622875 -t 6.349193111802711 3.8486291120825444 36.46029274304906
+
+
+
+sudo apt-get install xvfb
+xvfb-run -a python generate_json.py -l=../json_data -v=/root/videoavatars/data/male-william-rec/male_2_1.mp4
+
+python prepare_data/create_camera.py data/male-william-rec/camera.pkl 1920 1080 -f 1397.24270874 1409.15971591 -c 945.5240050260165 500.75980866883185 -k -0.14258217620672298 1.3107856777317701 -0.01778979419808045 -0.012313161080841902 -4.656384351976214 -rt -0.050249251093947976 -0.09157352615476687 3.1041882478405833 -t 6.605348371052352 3.6819489439525435 36.014984181950105
+
+python videospre/2djoints2hdf5.py videospre/json_data data/male-william-rec/keypoints.hdf5
+
+python prepare_data/masks2hdf5.py videospre/mask_data data/male-william-rec/masks.hdf5
+
+./run_step1.sh data/male-william-rec data/male-william-rec
+
+
+
+python prepare_data/create_camera.py data/male-william/camera.pkl 1080 1080 -f 900.0 900.0 -c 540 540
+
+python train.py --cfg_file /media/work/E/avatar/Anim-NeRF-main/Anim-NeRF-main/configs/iper/male-WiiliamWang1.yaml train.ckpt_path /media/work/E/avatar/Anim-NeRF-main/dataset/xinmu/checkpoints/last.ckpt
+
+/media/work/E/avatar/Anim-NeRF-main/dataset/xinmu/checkpoints/male-WilliamWang
+
+python train.py --cfg_file configs/people_snapshot/male-3-casual_refine.yml train.ckpt_path checkpoints/male-3-casual/last.ckpt
+
+python train.py --cfg_file "/media/work/E/avatar/Anim-NeRF-main/Anim-NeRF-main/configs/iper/male-WiiliamWang（refine2）.yaml" train.ckpt_path "/media/work/E/avatar/Anim-NeRF-main/dataset/xinmu/checkpoints/male-WilliamWang/last.ckpt"
+
+ANIMNERF
+
+python -m tools.video_to_images --vid_file /home/work/Anim-nerf-fyp/Anim-NeRF/data/iper/iper_yc/female_1_1.mp4 --output_folder /home/work/Anim-nerf-fyp/Anim-NeRF/data/iper/iper_yc/cam000/images --img_wh 1080 1080 --offsets 0 0
+
+python -m tools.rvm --images_folder /home/work/Anim-nerf-fyp/Anim-NeRF/data/iper/iper_yc/cam000/images --output_folder /home/work/Anim-nerf-fyp/Anim-NeRF/data/iper/iper_yc/cam000/images
+
+python -m tools.vibe --images_folder data/iper/iper_yc/cam000/images --output_folder data/iper/iper_yc
+
+python -m tools.convert_vibe --data_root /home/work/Anim-nerf-fyp/Anim-NeRF/data/iper --people_ID iper_yc --gender neutral
+
+python -m tools.prepare_template --data_root /home/work/Anim-nerf-fyp/Anim-NeRF/data/iper --people_ID iper_yc --model_type smpl --gender neutral --model_path /home/work/Anim-nerf-fyp/Anim-NeRF/smplx/models
+
+python train.py --cfg_file configs/iper/iper_yc.yaml
+
+python train.py --cfg_file configs/iper/iper_yc_refine.yaml train.ckpt_path checkpoints/iper/last.ckpt
