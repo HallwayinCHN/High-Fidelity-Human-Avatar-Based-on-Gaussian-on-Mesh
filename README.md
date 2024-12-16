@@ -1,5 +1,6 @@
 # High-Fidelity-Human-Avatar-Based-on-Gaussian-on-Mesh
 > WANG Haowei, XU Xinmu, YANG Can
+> Supervisor: DONG Xiao, Beijing Normal University - Hong Kong Baptist University United International College
 
 ## Related Paper or Project
 > [SplattingAvatar: Realistic Real-Time Human Avatars with Mesh-Embedded Gaussian Splatting](https://arxiv.org/abs/2403.05087)
@@ -24,9 +25,9 @@
 
 - [SplattingAvatar](https://github.com/initialneil/SplattingAvatar)
 - [Anim-NeRF](https://github.com/JanaldoChen/Anim-NeRF)
-- [InstantAvatar](https://github.com/tijiang13/InstantAvatar)
 - [videoavatars](https://github.com/thmoa/videoavatars)
 - [RobustVideoMatting](https://github.com/PeterL1n/RobustVideoMatting)
+- [InstantAvatar](https://github.com/tijiang13/InstantAvatar)
 
 ## Requirements
 - Python3.7 or later
