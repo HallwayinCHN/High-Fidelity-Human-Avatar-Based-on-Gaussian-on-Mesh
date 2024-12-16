@@ -22,11 +22,11 @@
 > 
 > Tianjian Jiang, Xu Chen, Jie Song, Otmar Hilliges
 
-- SplattingAvatar
-- Anim-NeRF
-- InstantAvatar
-- videoavatars
-- RobustVideoMatting
+- [SplattingAvatar](https://github.com/initialneil/SplattingAvatar)
+- [Anim-NeRF](https://github.com/JanaldoChen/Anim-NeRF)
+- [InstantAvatar](https://github.com/tijiang13/InstantAvatar)
+- [videoavatars](https://github.com/thmoa/videoavatars)
+- [RobustVideoMatting](https://github.com/PeterL1n/RobustVideoMatting)
 
 ## Requirements
 - Python3.7 or later
@@ -68,7 +68,7 @@ smplx
         ├── SMPL_MALE.pkl
         └── SMPL_NEUTRAL.pkl
 ```
-
+# Instruction for using Anim-NeRF
 ## Data Preparation
 ### iPER datasets or Custom datasets
 * Prepare images
